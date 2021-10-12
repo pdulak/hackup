@@ -1,7 +1,9 @@
-import os
-import click
-import json
 import hashlib
+import json
+import os
+
+import click
+
 
 #
 # TODO: Add an option to remove directories if removed on source side
