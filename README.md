@@ -1,6 +1,17 @@
 Hackup backup script
 ====================
 
+Usage:
+------
+
+hackup.py [OPTIONS] /source/dir/ /destination/dir/
+
+`/source/dir` - the source directory of to be backed up
+
+`/destination/dir` - the directory to create archive into
+
+`--password MyPassword` - create packages using password of 'MyPassword' (optional)
+
 Purpose:
 --------
 
@@ -10,4 +21,3 @@ in the destination directory. Such a set of packed directories can be sent to th
 The script is checking for changes in the source directories (one by one, recursive)
 and generates only missing packages or packages of directories that changed. This means that only packages that changed
 between the last backup and current backup will be transferred. 
-

@@ -18,10 +18,6 @@ import pyzipper
 def perform_backup(source_dir, destination_dir, password):
     """
     Performs backup of source directory in destination directory by creating packages of files
-    :param source_dir: Source directory
-    :param destination_dir: Destination directory
-    :param password: Password to create password-protected ZIP package
-    :return:
     """
     clone_directories(source_dir, destination_dir)
     generate_packages(source_dir, destination_dir, password)
